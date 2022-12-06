@@ -83,14 +83,14 @@ public class StudentManagement extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		
-		JButton btnGo = new JButton("Search Student");
-		btnGo.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				StudentSearch sn=new StudentSearch();
-				sn.showFrame();
-				frame.setVisible(false);
-			}
-		});
+		// JButton btnGo = new JButton("Search Student");
+		// btnGo.addActionListener(new ActionListener() {
+		// 	public void actionPerformed(ActionEvent arg0) {
+		// 		StudentSearch sn=new StudentSearch();
+		// 		sn.showFrame();
+		// 		frame.setVisible(false);
+		// 	}
+		// });
 		
 		
 		final JFileChooser fc = new JFileChooser();
@@ -238,7 +238,6 @@ public class StudentManagement extends JFrame {
 					.addGap(23)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
 						.addGroup(gl_contentPane.createSequentialGroup()
-							.addComponent(btnGo)
 							.addGap(60)
 							.addComponent(lblNewLabel)
 							.addContainerGap())
@@ -308,7 +307,6 @@ public class StudentManagement extends JFrame {
 				.addGroup(gl_contentPane.createSequentialGroup()
 					.addGap(15)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-						.addComponent(btnGo)
 						.addComponent(lblNewLabel))
 					.addGap(18)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
@@ -366,8 +364,7 @@ public class StudentManagement extends JFrame {
 						.addComponent(address, GroupLayout.PREFERRED_SIZE, 77, GroupLayout.PREFERRED_SIZE))
 					.addGap(18)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-						.addComponent(btnSubmit)
-						.addComponent(btnChoosePhoto))
+						.addComponent(btnSubmit))
 					.addContainerGap(43, Short.MAX_VALUE))
 		);
 		contentPane.setLayout(gl_contentPane);
